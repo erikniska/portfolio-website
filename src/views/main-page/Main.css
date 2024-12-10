@@ -1,0 +1,39 @@
+.block-header {
+  position: relative; /* Makes it a positioning context for the child elements */
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.block-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the block */
+  position: absolute; /* The image will stay in the background */
+  top: 0;
+  left: 0;
+}
+
+.text-overlay {
+  position: absolute; /* Position it relative to the parent block */
+  width: 50vw;
+  height: 80vh;
+  top: 50%; /* Move it down by 50% of the parent's height */
+  transform: translate(-50%, -50%); /* Adjust for exact centering */
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to make the text stand out */
+  color: white; /* White text color */
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+.block-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
