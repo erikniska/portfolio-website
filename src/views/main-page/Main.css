@@ -1,39 +1,75 @@
+
+
+/* FÖRSTA SEKTIONEN */
+/* ----------------------------------------------------------------------------- */
+.block-header-wrapper {
+  background-color: var(--DARK_GREEN);
+  position: relative;
+}
 .block-header {
-  position: relative; /* Makes it a positioning context for the child elements */
+  position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 50vh;
+  justify-content:flex-start;
+  gap: 10px;
+  display: grid;
+  
+  column-gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 1440px;
+  
+} 
+.grid-box {
+  grid-column: span 6;
+  
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  justify-content: center;
+
 }
-
-.block-header img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the block */
-  position: absolute; /* The image will stay in the background */
-  top: 0;
-  left: 0;
+.grid-box h1 {
+  font-family: 'popins', sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
 }
-
-.text-overlay {
-  position: absolute; /* Position it relative to the parent block */
-  width: 50vw;
-  height: 80vh;
-  top: 50%; /* Move it down by 50% of the parent's height */
-  transform: translate(-50%, -50%); /* Adjust for exact centering */
-  background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to make the text stand out */
-  color: white; /* White text color */
-  font-size: 2rem;
-  text-align: center;
+.grid-box h2 {
+  font-family: 'oswald', sans-serif;
+  font-size: 1.5rem;
 }
+.grid-box p {
+
+  font-family: 'oswald', sans-serif;
+  font-size: 1.5rem;
+}
+/* ----------------------------------------------------------------------------- */
 
 
+
+/* ANDRA SEKTIONEN */
+/* ----------------------------------------------------------------------------- */
+.block-content-wrapper {
+  position: relative;
+  background-color: var(--LIGHT_GREEN);
+}
 .block-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 50vh;
+  justify-content:center;
+  gap: 10px;
+  
+  
+  column-gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: 1440px;
 }
+/* ----------------------------------------------------------------------------- */
